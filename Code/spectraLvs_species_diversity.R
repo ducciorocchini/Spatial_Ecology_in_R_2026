@@ -5,6 +5,8 @@ library(ggplot2)
 # 1. IMPORTAZIONE
 # ============================================================
 
+setwd("~/Desktop/")
+
 dat <- read.csv("spectral_diversity_CV_Rao_by_plot.csv") %>%
   rename(shannon = SHANNON)
 
