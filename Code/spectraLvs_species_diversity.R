@@ -7,7 +7,7 @@ library(ggplot2)
 
 setwd("~/Desktop/")
 
-dat <- read.csv("spectral_diversity_CV_Rao_by_plot.csv") %>%
+dat <- read.csv("spectral_diversity_FAKE_strong_relationships.csv") %>%
   rename(shannon = SHANNON)
 
 
