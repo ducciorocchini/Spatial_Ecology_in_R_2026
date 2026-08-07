@@ -5,7 +5,7 @@ library(ggplot2)
 # 1. IMPORTAZIONE
 # ============================================================
 
-setwd("~/Desktop/")
+setwd("~/Downloads/")
 
 dat <- read.csv("spectral_diversity_FAKE_strong_relationships.csv") %>%
   rename(shannon = SHANNON)
