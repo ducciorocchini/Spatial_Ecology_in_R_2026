@@ -1,0 +1,255 @@
+---
+title: "Introduction to Spatial Ecology in R"
+author: Duccio Rocchini
+format:
+  revealjs:
+    self-contained: true
+editor: visual
+---
+
+## Prof
+
+[Prof in a nutshell](https://www.google.com/search?q=duccio+rocchini&rlz=1C5CHFA_enIT1141IT1141&oq=duccio+rocchini+&gs_lcrp=EgZjaHJvbWUqCggAEEUYFhgeGDsyCggAEEUYFhgeGDsyCAgBEEUYJxg7MgYIAhBFGDsyBggDECMYJzIGCAQQRRg8MgYIBRBFGEEyBggGEEUYPDIGCAcQRRhB0gEIMjM5OGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8)
+
+## Three different levels of organisation
+
+::: {style="text-align: center;"}
+![](../images/organisation.png){width="90%"}
+:::
+
+## Different analysis types
+
+::: {style="text-align: center;"}
+![](../images/spatial_ecol.png){width="90%"}
+:::
+
+# Populations
+
+## Population density
+
+```{r dense, echo=T, eval=T}
+library(spatstat)
+bei
+plot(bei)
+```
+
+## Maps of density
+
+```{r densemap, echo=T, eval=T}
+dmap <- density(bei)
+plot(dmap)
+```
+
+## Population dispersion
+
+```{r disperse, echo=F, eval=T}
+
+library(terra)
+library(sdm)
+library(viridis)
+file <- system.file("external/species.shp", package="sdm")
+rana <- vect(file)
+pres <- rana[rana$Occurrence==1]
+
+# Covariates
+elev <- system.file("external/elevation.asc", package="sdm")
+# [1] "/usr/local/lib/R/site-library/sdm/external/elevation.asc"
+
+elevmap <- rast(elev)
+
+# Exercise: import temperature and plot presences vs. temperature
+temp <- system.file("external/temperature.asc", package="sdm")
+
+tempmap <- rast(temp)
+
+# precipitation
+prec <- system.file("external/precipitation.asc", package="sdm")
+
+precmap <- rast(prec)
+
+# vegetation
+vege <- system.file("external/vegetation.asc", package="sdm")
+vegemap <- rast(vege)
+
+par(mfrow=c(2,2))
+plot(elevmap)
+points(pres)
+plot(tempmap)
+points(pres)
+plot(precmap)
+points(pres)
+plot(vegemap)
+points(pres)
+```
+
+# Communities
+
+## Communities
+
+::: {style="text-align: center;"}
+![](../images/spatial_ecol.png){width="90%"}
+:::
+
+## Multivariate analysis
+
+```{r multivar, echo=T, eval=T}
+
+library(vegan)
+data(dune)
+multivar <- decorana(dune)
+plot(multivar)
+```
+
+## Community overlap
+
+```{r overlap, echo=F, eval=T}
+library(overlap)
+par(mfrow=c(2,2))
+data(kerinci)
+circulartime <- kerinci$Time * 2 * pi
+kerinci$Timecirc <- kerinci$Time * 2 * pi
+tiger <- kerinci[kerinci$Sps=="tiger",]
+tigertime <- tiger$Timecirc
+densityPlot(tigertime)
+macaque <- kerinci[kerinci$Sps=="macaque",]
+macaquetime <- macaque$Timecirc
+densityPlot(macaquetime)
+overlapPlot(tigertime, macaquetime)
+```
+
+## Graph theory
+
+```{r grapht, echo=T, eval=T}
+library(igraph)
+
+species <- c("Algae", "Zooplankton", "Small Fish", "Large Fish", "Bird")
+
+predator <- c("Zooplankton", "Small Fish", "Large Fish", "Bird", "Bird")
+prey <- c("Algae", "Zooplankton", "Small Fish", "Small Fish", "Large Fish")
+
+interactions <- data.frame(predator, prey)
+
+g <- graph_from_data_frame(interactions, vertices = species, directed = T)
+plot(g)
+```
+
+## Graph theory
+
+```{r grapht2, echo=F, eval=T}
+library(igraph)
+
+species <- c("Algae", "Zooplankton", "Small Fish", "Large Fish", "Bird")
+
+predator <- c("Zooplankton", "Small Fish", "Large Fish", "Bird", "Bird")
+prey <- c("Algae", "Zooplankton", "Small Fish", "Small Fish", "Large Fish")
+
+interactions <- data.frame(predator, prey)
+
+g <- graph_from_data_frame(interactions, vertices = species, directed = T)
+plot(g)
+```
+
+# Ecosystems
+
+::: {style="text-align: center;"}
+![](../images/spatial_ecol.png){width="90%"}
+:::
+
+## Remote sensing
+
+```{r rs, echo=T, eval=T}
+
+library(imageRy)
+library(terra)
+
+# importing the first band
+snt <- im.import("sentinel.d")
+im.plotRGB(snt, 4,3,2)
+```
+
+## Remote sensing
+
+```{r rs2, echo=T, eval=T}
+im.plotRGB(snt, 4,3,2)
+```
+
+## Spectral indices
+
+```{r si, echo=F, eval=T}
+
+library(imageRy)
+library(terra)
+
+# importing the first band
+snt <- im.import("Sentinel2_NDVI")
+plot(snt)
+```
+
+## Classification
+
+```{r class, echo=T, eval=T}
+sun <- im.import("Solar_Orbiter_s_first_views_of_the_Sun_pillars.jpg")
+```
+
+## Classification
+
+```{r class2, echo=T, eval=T}
+sunc <- im.classify(sun, num_clusters=3) 
+```
+
+## Time series analysis
+
+```{r ts, echo=T, eval=T}
+ndvi <- im.import("NDVI_2020")
+```
+
+## Time series analysis
+
+```{r ts2, echo=T, eval=T}
+names(ndvi)=c("02-feb","05-may","08-aug","11-nov")
+im.ridgeline(ndvi, scale=2)
+```
+
+## Spatial variablity
+
+```{r sv, echo=T, eval=T}
+sent <- im.import("sentinel.png")
+```
+
+## Spatial variablity
+
+```{r sv2, echo=T, eval=T}
+sd5 <- terra::focal(sent[[1]], w=5, fun="sd")
+plot(sd5)
+```
+
+## Colorblindness
+
+[Scientific maps should reach everyone: The cblindplot R package to let colour blind people visualise spatial patterns](https://www.sciencedirect.com/science/article/pii/S1574954123000742)
+
+# Informatics
+
+## Languages you will learn
+
+> Programming:
+
+-   [R](https://www.r-project.org/)
+
+-   [GitHub](https://github.com/)
+
+> Reporting:
+
+-   [LaTeX](https://www.latex-project.org/)
+
+-   [Markdown](https://www.markdownguide.org/basic-syntax/)
+
+-   [Quarto](https://quarto.org/docs/authoring/language.html)
+
+## Book
+
+[R Coding for Ecology](https://doi.org/10.1007/978-3-031-99665-8)
+
+## Exam
+
+1.  [Project in Markdown](https://github.com/larakeyssner/Spatial_Ecology_in_R/blob/main/Presentation-Project.md)
+2.  At the exam date: I will check the code of your Markdown project and make questions related to it
