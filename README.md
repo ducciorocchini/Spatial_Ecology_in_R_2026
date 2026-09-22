@@ -5,3 +5,7 @@
 ## Master programs involved
 
 <img width="4284" height="5712" alt="IMG_7963" src="https://github.com/user-attachments/assets/53cc4b4d-9cfc-4c33-88a6-406dd67f3a00" />
+
+## Next coding generations: welcome to the jungle!
+
+<img width="4032" height="3024" alt="IMG_7965" src="https://github.com/user-attachments/assets/8aed7e57-8d52-4eb4-b46d-13a23950aab2" />
