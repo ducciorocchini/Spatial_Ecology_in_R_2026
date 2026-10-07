@@ -1,5 +1,7 @@
 # Suggested movies, music, books
 
+Material cited during lectures.
+
 ## Movies
 + [Siccità](https://www.youtube.com/watch?v=p8wa3seGxAY)
 
