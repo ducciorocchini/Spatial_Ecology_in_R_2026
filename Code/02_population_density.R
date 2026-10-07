@@ -44,6 +44,32 @@ elevation2 <- bei.extra[[1]]
 # Plot the new object
 plot(elevation2)
 
+# Creating our first map!
+densitymap <- density(bei)
+
+# Output
+densitymap
+
+# Plot the result
+plot(densitymap)
+
+# Plotting the points ontop of the density map
+points(bei, cex=.5)
+
+# New concept!: MULTIFRAME!
+# Creating the multiframe
+par(mfrow=c(1,2))
+plot(elevation)
+plot(densitymap)
+
+# Exercise: Put the elevation map ontop of the densitymap
+par(mfrow=c(2,1))
+plot(elevation)
+plot(densitymap)
+
+# If you get any graphical ussue here is your friend:
+dev.off()
+
 
 
 
