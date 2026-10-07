@@ -28,3 +28,6 @@ This course mainly focuses on the application of free and open source algorithms
 + 5. Remote sensing in R
 + 6. Multitemporal analysis of ecosystem functions
 + 7. Species Distribution Modelling
+ 
+## Potential additional code of interest
+https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/activity.html
