@@ -8,3 +8,12 @@
 library(terra)
 library(sdm)
 
+# Path to the file
+path <- system.file("external/species.shp", package="sdm")
+
+# Import the vector data
+rana <- vect(path)
+rana
+
+# Plotting the data
+plot(rana)
