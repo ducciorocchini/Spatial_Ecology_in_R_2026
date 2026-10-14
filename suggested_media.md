@@ -13,5 +13,6 @@ Material cited during lectures.
 + [Disco Inferno](https://www.youtube.com/watch?v=pG8TyIEAqps) - inferno is one of the names of the viridis package [palettes](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
 
 ## Books
++ [R Coding for Ecology](https://doi.org/10.1007/978-3-031-99665-8) - book suggested for the course
 + [The Jungle of Randomness A Mathematical Safari](https://archive.org/details/junglesofrandomn0000pete) - cited for random sampling
 + [The Zen of Exotic Computing](https://www.amazon.com/dp/1611977282?lv=shuf&channelId=500&plpRedirect=mhFallback) - hard computation book
