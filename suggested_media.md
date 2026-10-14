@@ -10,6 +10,7 @@ Material cited during lectures.
 + [Sweet Child of Mine](https://youtu.be/1w7OgIMMRc4?si=Nit3n9YDP7f98gJ7) - cited for the slash symbol
 + [Timewarp](https://www.youtube.com/watch?v=YC1E8yVJIS4) -  cited for the magenta color in R
 + [Two minutes to midnight](https://youtu.be/9qbRHY1l0vc?si=vUpGYPgdWpzexpat) - Two minutes equals the mean time to complete exercises in the class
++ [Disco Inferno](https://www.youtube.com/watch?v=pG8TyIEAqps) - inferno is one of the names of the viridis package [palettes](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
 
 ## Books
 + [The Jungle of Randomness A Mathematical Safari](https://archive.org/details/junglesofrandomn0000pete) - cited for random sampling
