@@ -19,7 +19,8 @@ flowchart TD
 
 ## Zenodo
 
-![Zenodo links research files to a citable version.](figures/zenodo_concept.png)
+<img width="1536" height="1024" alt="zenodo" src="https://github.com/user-attachments/assets/5ccd1241-1067-4cff-b9fc-b4ddcf6439ca" />
+
 
 *Zenodo links research files to a citable version. Conceptual illustration.*
 
@@ -34,7 +35,8 @@ Record the dataset title, creators, publication year, version, DOI, and licence.
 
 ## GBIF
 
-![GBIF connects species occurrence records to locations and dates.](figures/gbif_concept.png)
+<img width="1536" height="1024" alt="gbif" src="https://github.com/user-attachments/assets/34f6077a-d8ec-4929-9956-70374059e047" />
+
 
 *GBIF connects species occurrence records to locations and dates. Conceptual illustration.*
 
@@ -50,7 +52,8 @@ Check for duplicates, missing values, coordinate errors, and differences in samp
 
 ## Google Earth Engine
 
-![Earth Engine connects catalog data, analysis code, and exported results.](figures/earth_engine_concept.png)
+<img width="1536" height="1024" alt="gge" src="https://github.com/user-attachments/assets/1a371208-d1bb-43c7-b930-63d0035783eb" />
+
 
 *Earth Engine connects catalog data, analysis code, and exported results. Conceptual illustration.*
 
@@ -66,7 +69,8 @@ For example, the [harmonized Sentinel-2 surface reflectance collection](https://
 
 ## Copernicus
 
-![Copernicus provides satellite products with acquisition and processing metadata.](figures/copernicus_concept.png)
+<img width="1536" height="1024" alt="copernicus" src="https://github.com/user-attachments/assets/211776b0-5bdf-4244-a9b1-5727d77819e9" />
+
 
 *Copernicus provides satellite products with acquisition and processing metadata. Conceptual illustration.*
 
