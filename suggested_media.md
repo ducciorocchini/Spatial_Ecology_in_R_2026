@@ -11,6 +11,7 @@ Material cited during lectures.
 + [Timewarp](https://www.youtube.com/watch?v=YC1E8yVJIS4) -  cited for the magenta color in R
 + [Two minutes to midnight](https://youtu.be/9qbRHY1l0vc?si=vUpGYPgdWpzexpat) - Two minutes equals the mean time to complete exercises in the class
 + [Disco Inferno](https://www.youtube.com/watch?v=pG8TyIEAqps) - inferno is one of the names of the viridis package [palettes](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
++ [Lazy](https://www.youtube.com/watch?v=KnIgXtE4K5U&list=RDKnIgXtE4K5U&start_radio=1) - learning to be lazy is demanding but rewarding  
 
 ## Books
 + [R Coding for Ecology](https://doi.org/10.1007/978-3-031-99665-8) - book suggested for the course
