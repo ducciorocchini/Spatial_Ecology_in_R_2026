@@ -65,9 +65,9 @@ overlapPlot(tigertime,
 # Changing the overlap color
 overlapPlot(tigertime, 
             macaquetime, 
-            linetype=c(3,1),
-            linecol=c("cyan3", "coral"),
-            olapcol="deeppink"
+            linetype=c(3,1),             # line types
+            linecol=c("cyan3", "coral"), # line colors
+            olapcol="deeppink"           # overlap polygon color
            )
 
 
