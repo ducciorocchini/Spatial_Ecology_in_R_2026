@@ -18,3 +18,4 @@ Material cited during lectures.
 + [R Coding for Ecology](https://doi.org/10.1007/978-3-031-99665-8) - book suggested for the course
 + [The Jungle of Randomness A Mathematical Safari](https://archive.org/details/junglesofrandomn0000pete) - cited for random sampling
 + [The Zen of Exotic Computing](https://www.amazon.com/dp/1611977282?lv=shuf&channelId=500&plpRedirect=mhFallback) - hard computation book
++ [Rewards and Fairies](https://en.wikipedia.org/wiki/Rewards_and_Fairies) - Recalling the If poem for the if else construct
