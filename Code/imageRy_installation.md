@@ -19,5 +19,6 @@ install.packages("remotes")
 ### 2. Install imageRy from GitHub
 
 ``` r
+library(remotes)
 install_github("ducciorocchini/imageRY") # GitHub account and package
 ```
