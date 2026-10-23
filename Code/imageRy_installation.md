@@ -24,3 +24,10 @@ install_github("ducciorocchini/imageRy") # GitHub account and package
 ```
 
 During the installation do not update previous packages (just pressing enter)
+
+Write:
+``` r
+library(imageRy)
+```
+
+to check that the package has been properly installed.
