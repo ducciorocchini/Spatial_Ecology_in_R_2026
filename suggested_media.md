@@ -13,6 +13,7 @@ Material cited during lectures.
 + [Disco Inferno - The Trammps](https://www.youtube.com/watch?v=pG8TyIEAqps) - inferno is one of the names of the viridis package [palettes](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
 + [Lazy - Deppe Purple](https://www.youtube.com/watch?v=KnIgXtE4K5U&list=RDKnIgXtE4K5U&start_radio=1) - learning to be lazy is demanding but rewarding
 + [If - Pink Floyd](https://youtu.be/e7t7aQLcik0?si=Ob5pC8p193t-L2uN) - recalliing the if else construct
++ [Days- The Kinks](https://www.youtube.com/watch?v=sfyzaiT_rRU) - we will wait the theses defenses before meeting again
 
 ## Books
 + [R Coding for Ecology](https://doi.org/10.1007/978-3-031-99665-8) - book suggested for the course
