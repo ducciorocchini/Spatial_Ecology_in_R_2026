@@ -1,8 +1,8 @@
 # Remote sensing for ecosystems
 
-<img width="5712" height="4284" alt="IMG_9020" src="https://github.com/user-attachments/assets/9779c3a7-34dc-445a-b39f-371140fef1d0" />
+## Installation of the imageRy package from GitHub
 
-## Installation of the imageRy package from github
+<img width="5712" height="4284" alt="IMG_9020" src="https://github.com/user-attachments/assets/9779c3a7-34dc-445a-b39f-371140fef1d0" />
 
 In order to install packages from GitHub you need to use a function coming out from the remote spackage.
 
