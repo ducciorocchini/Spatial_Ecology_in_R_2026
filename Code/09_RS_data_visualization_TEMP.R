@@ -1,7 +1,8 @@
 # Code to visualize remote sensing data
 
 # Zenodo set: https://zenodo.org/records/15645465
-# install.packages("imageRy")
+# library(remotes)
+# install_github("ducciorocchini/imageRy")
 
 library(imageRy)
 library(terra)
