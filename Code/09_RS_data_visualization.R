@@ -83,8 +83,46 @@ plot(sent, col=mako(100))
 # since the stack was built by: sent <- c(b2, b3, b4, b8)
 plot(sentinel[[4]])
 
-
 # RGB
+# layer 1 = b2 = blue band
+# layer 2 = b3 = green band
+# layer 3 = b4 = red band
+# layer 4 = b8 = NIR
+
+# Natural colors image
+im.plotRGB(sentinel, r=3, g=2, b=1, title="Natural colors image")
+
+# False colors image
+im.plotRGB(sentinel, r=4, g=3, b=2, title="False colors image")
+
+# making a multiframe with the two RGB images
+im.multiframe(1,2)
+# Natural colors image
+im.plotRGB(sentinel, r=3, g=2, b=1, title="Natural colors image")
+# False colors image
+im.plotRGB(sentinel, r=4, g=3, b=2, title="False colors image")
+
+# Exercise: Put the NIR ontop of the green component of the RGB scheme
+im.plotRGB(sentinel, r=3, g=4, b=2, title="False colors image")
+
+# NIR will drive the whole visualisation
+im.plotRGB(sentinel, r=2, g=4, b=1, title="False colors image")
+
+# Exercise: put the NIR layer ontop of the blue component of the RGB scheme
+im.plotRGB(sentinel, r=3, g=2, b=4, title="False colors image")
+
+# Making a multiframe with the four RGB plots
+im.multiframe(2,2)
+im.plotRGB(sentinel, r=3, g=2, b=1, title="Natural colors image")
+im.plotRGB(sentinel, r=4, g=3, b=2, title="False colors image")
+im.plotRGB(sentinel, r=2, g=4, b=1, title="False colors image")
+im.plotRGB(sentinel, r=3, g=2, b=4, title="False colors image")
+
+
+
+
+
+
 
 
 
