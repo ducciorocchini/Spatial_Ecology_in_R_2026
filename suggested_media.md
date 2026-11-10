@@ -23,3 +23,4 @@ Material cited during lectures.
 + [Rewards and Fairies](https://en.wikipedia.org/wiki/Rewards_and_Fairies) - Recalling the If poem for the if else construct
 + [Atlas of the Real World](https://www.dannydorling.org/wp-content/files/dannydorling_publication_id0891.pdf) - Dealing with cartograms
 + [The Hitchhiker's Guide to the Galaxy](https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy_(novel)) - for the set.seed(42)
++ [Flatland: A Romance of Many Dimensions - E.A. Abbott](https://en.wikipedia.org/wiki/Flatland) - once we spoke about multivariate analysis
