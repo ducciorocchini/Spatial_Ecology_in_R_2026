@@ -55,7 +55,7 @@ plot(m1992[[1]])
 # Spatial: dimension of the pixel
 # Spectral: number of bands
 # Temporal: number of images in time
-# radiometric: number of bits
+# Radiometric: number of bits
 
 # Imporing the recent image
 # make the list of data
