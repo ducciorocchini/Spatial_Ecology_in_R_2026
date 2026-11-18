@@ -7,7 +7,7 @@ setwd("youtpath")
 input <- rast("yourdta")
 
 # Zenodo link to the data taken by drones:
-setwd("~/Desktop/bologna")
+# https://zenodo.org/records/24343819/files/
 
 bolonir <- rast("DJI_20261118105819_0004_MS_NIR.TIF")
 bolonir <- flip(bolonir)
@@ -25,12 +25,15 @@ plotRGB(bolo, 1, 2, 3, stretch="lin")
 # Several files at a time
 
 files <- list.files(
-  path = "yourfolder",
+  path = "yourpath",
   pattern = "DJI_20261118105819_0004_MS",
   full.names = TRUE
 )
 
-data <- lapply(files, terra::rast)
+ms <- rast(files)
+ms <- flip(ms)
+
+plot(ms)
 
 # Uploading directly from GitHub or Zenodo
 
@@ -39,7 +42,5 @@ data <- lapply(files, terra::rast)
 gitgroup <- rast("https://raw.githubusercontent.com/ducciorocchini/Spatial_Ecology_in_R_2026/main/Data/group_photo/DJI_20261118105938_0002_D.JPG")
 
 # Directly from Zenodo
-
-zenodo <- rast("https://zenodo.org/records/ID/files/FILE_NAME?download=1")
-
-
+zenodo <- rast("https://zenodo.org/records/24343819/files/DJI_20261118105819_0004_MS_R.TIF")
+plot(zenodo)
