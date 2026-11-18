@@ -7,7 +7,7 @@ setwd("youtpath")
 input <- rast("yourdta")
 
 # Zenodo link to the data taken by drones:
-# https://dx.doi.org/10.5281/zenodo.24343818
+# https://zenodo.org/records/24343819
 
 bolonir <- rast("DJI_20261118105819_0004_MS_NIR.TIF")
 bolonir <- flip(bolonir)
