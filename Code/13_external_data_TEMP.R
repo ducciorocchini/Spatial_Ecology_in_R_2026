@@ -7,7 +7,7 @@ setwd("youtpath")
 input <- rast("yourdta")
 
 # Zenodo link to the data taken by drones:
-# https://zenodo.org/records/24343819/files/
+# https://dx.doi.org/10.5281/zenodo.24343818
 
 bolonir <- rast("DJI_20261118105819_0004_MS_NIR.TIF")
 bolonir <- flip(bolonir)
@@ -42,5 +42,5 @@ plot(ms)
 gitgroup <- rast("https://raw.githubusercontent.com/ducciorocchini/Spatial_Ecology_in_R_2026/main/Data/group_photo/DJI_20261118105938_0002_D.JPG")
 
 # Directly from Zenodo
-zenodo <- rast("https://zenodo.org/records/24343819/files/DJI_20261118105819_0004_MS_R.TIF")
-plot(zenodo)
+# zenodo <- rast("https://zenodo.org/records/24343819/files/DJI_20261118105819_0004_MS_R.TIF")
+# plot(zenodo)
