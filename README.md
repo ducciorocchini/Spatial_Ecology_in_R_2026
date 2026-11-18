@@ -10,6 +10,8 @@
 
 <img width="4032" height="3024" alt="IMG_7965" src="https://github.com/user-attachments/assets/8aed7e57-8d52-4eb4-b46d-13a23950aab2" />
 
+<img width="5280" height="3956" alt="DJI_20261118101742_0002_D" src="https://github.com/user-attachments/assets/2f49ae05-b894-441f-805d-9ead4870419d" />
+
 
 ## Course description
 
