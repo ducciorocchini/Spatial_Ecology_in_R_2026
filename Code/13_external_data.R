@@ -12,7 +12,7 @@ setwd("/Users/ducciorocchini/Downloads")
 setwd("~\Downloads")
 
 # Windows: \ in the path, the correct one is the slash! /
-setwd("c://....../Downloads")
+setwd("C://....../Downloads")
 
 # Check your working directory
 getwd()
