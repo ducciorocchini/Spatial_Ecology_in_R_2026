@@ -119,7 +119,11 @@ for (w in 1:27) {
   }
 }
 
+# Changing the list to a raster
+sdNIR_stack <- rast(sdNIR)
+names(sdNIR_stack) <- names(sdNIR)
 
+plot(sdNIR_stack)
 
 
 
